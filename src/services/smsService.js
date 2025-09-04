@@ -10,7 +10,7 @@ const logger = require('../utils/logger');
  */
 const sendSms = async (to, message) => {
   try {
-    if (!config.sendchamp.accessToken || !config.sendchamp.senderId) {
+    if (!config.sendchamp.publicKey || !config.sendchamp.senderId) {
       throw new Error('Sendchamp configuration is incomplete');
     }
     
@@ -26,7 +26,7 @@ const sendSms = async (to, message) => {
       payload,
       {
         headers: {
-          'Authorization': `Bearer ${config.sendchamp.accessToken}`,
+          'Authorization': `Bearer ${config.sendchamp.publicKey}`,
           'Accept': 'application/json',
           'Content-Type': 'application/json',
         },

@@ -10,7 +10,6 @@ module.exports = {
   },
   sendchamp: {
     publicKey: process.env.SENDCHAMP_PUBLIC_KEY,
-    accessToken: process.env.SENDCHAMP_ACCESS_TOKEN,
     senderId: process.env.SENDCHAMP_SENDER_ID,
     baseUrl: 'https://api.sendchamp.com/api/v1',
   },
