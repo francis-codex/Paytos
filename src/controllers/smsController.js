@@ -5,13 +5,16 @@ const smsService = require('../services/smsService');
 const logger = require('../utils/logger');
 
 /**
- * Handle incoming SMS messages
+ * Handle incoming SMS messages from Sendchamp webhook
  * @param {Object} req - Express request object
  * @param {Object} res - Express response object
  */
 const handleIncomingSms = async (req, res) => {
   try {
-    const { Body: messageText, From: phoneNumber } = req.body;
+    // Sendchamp webhook payload structure
+    const { message, from } = req.body;
+    const messageText = message;
+    const phoneNumber = from;
     
     logger.info(`Received SMS from ${phoneNumber}: ${messageText}`);
     
@@ -22,9 +25,8 @@ const handleIncomingSms = async (req, res) => {
     if (parsedCommand.error) {
       await smsService.sendErrorMessage(phoneNumber, parsedCommand.error);
       
-      // Send a response to Twilio (empty TwiML to avoid default Twilio response)
-      res.set('Content-Type', 'text/xml');
-      res.send('<Response></Response>');
+      // Send success response to Sendchamp webhook
+      res.status(200).json({ status: 'success', message: 'SMS processed' });
       return;
     }
     
@@ -67,13 +69,13 @@ const handleIncomingSms = async (req, res) => {
         );
     }
     
-    // Send a response to Twilio (empty TwiML)
-    res.set('Content-Type', 'text/xml');
-    res.send('<Response></Response>');
+    // Send success response to Sendchamp webhook
+    res.status(200).json({ status: 'success', message: 'SMS processed' });
   } catch (error) {
     logger.error(`Error handling SMS: ${error.message}`);
-    res.status(500).send({
-      error: 'Failed to process SMS message',
+    res.status(500).json({
+      status: 'error',
+      message: 'Failed to process SMS message',
     });
   }
 };

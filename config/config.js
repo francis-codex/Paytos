@@ -8,10 +8,11 @@ module.exports = {
   mongo: {
     uri: process.env.MONGODB_URI || 'mongodb://localhost:27017/paie',
   },
-  twilio: {
-    accountSid: process.env.TWILIO_ACCOUNT_SID,
-    authToken: process.env.TWILIO_AUTH_TOKEN,
-    phoneNumber: process.env.TWILIO_PHONE_NUMBER,
+  sendchamp: {
+    publicKey: process.env.SENDCHAMP_PUBLIC_KEY,
+    accessToken: process.env.SENDCHAMP_ACCESS_TOKEN,
+    senderId: process.env.SENDCHAMP_SENDER_ID,
+    baseUrl: 'https://api.sendchamp.com/api/v1',
   },
   base: {
     masterWalletPrivateKey: process.env.MASTER_WALLET_PRIVATE_KEY,

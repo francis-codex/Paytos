@@ -1,44 +1,53 @@
-const twilio = require('twilio');
+const axios = require('axios');
 const config = require('../../config/config');
 const logger = require('../utils/logger');
 
-// Initialize Twilio client
-const getClient = () => {
-  if (!config.twilio.accountSid || !config.twilio.authToken) {
-    throw new Error('Twilio configuration is incomplete');
-  }
-  return twilio(
-    config.twilio.accountSid,
-    config.twilio.authToken
-  );
-};
-
 /**
- * Send an SMS message
+ * Send an SMS message via Sendchamp
  * @param {string} to - Recipient phone number (with country code)
  * @param {string} message - Message content
- * @returns {Promise<Object>} The message SID and status
+ * @returns {Promise<Object>} The message ID and status
  */
 const sendSms = async (to, message) => {
   try {
-    if (!config.twilio.accountSid || !config.twilio.authToken || !config.twilio.phoneNumber) {
-      throw new Error('Twilio configuration is incomplete');
+    if (!config.sendchamp.accessToken || !config.sendchamp.senderId) {
+      throw new Error('Sendchamp configuration is incomplete');
     }
     
-    const client = getClient();
-    const result = await client.messages.create({
-      body: message,
-      from: config.twilio.phoneNumber,
-      to,
-    });
-    
-    logger.info(`SMS sent to ${to}. SID: ${result.sid}`);
-    return {
-      sid: result.sid,
-      status: result.status,
+    const payload = {
+      to: [to],
+      message: message,
+      sender_name: config.sendchamp.senderId,
+      route: 'non_dnd'
     };
+    
+    const response = await axios.post(
+      `${config.sendchamp.baseUrl}/sms/send`,
+      payload,
+      {
+        headers: {
+          'Authorization': `Bearer ${config.sendchamp.accessToken}`,
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+      }
+    );
+    
+    if (response.data.status === 200) {
+      logger.info(`SMS sent to ${to}. Message ID: ${response.data.data.id}`);
+      return {
+        id: response.data.data.id,
+        status: response.data.data.status,
+        reference: response.data.data.reference,
+      };
+    } else {
+      throw new Error(`Sendchamp API error: ${response.data.message}`);
+    }
   } catch (error) {
     logger.error(`Failed to send SMS to ${to}: ${error.message}`);
+    if (error.response) {
+      logger.error(`Sendchamp API response: ${JSON.stringify(error.response.data)}`);
+    }
     throw error;
   }
 };

@@ -7,7 +7,7 @@ paie allows users to send and receive USDC tokens on the Base network via basic 
 paie bridges the gap between blockchain and traditional feature phones by enabling:
 
 - A backend wallet system that users interact with via SMS commands
-- A trusted SMS gateway (Twilio) to send/receive messages
+- A trusted SMS gateway (Sendchamp) to send/receive messages
 - Custodial wallets managed by our backend on Base network
 
 ## 📱 How It Works
@@ -44,7 +44,7 @@ The recipient gets a notification when money is sent to their phone number:
 
 - Node.js (v14+)
 - MongoDB
-- Twilio account
+- Sendchamp account
 - Base network wallet with ETH for gas fees
 
 ### Installation
@@ -69,10 +69,10 @@ NODE_ENV=development
 # MongoDB Configuration
 MONGODB_URI=mongodb://localhost:27017/paie
 
-# Twilio Configuration
-TWILIO_ACCOUNT_SID=your_twilio_account_sid
-TWILIO_AUTH_TOKEN=your_twilio_auth_token
-TWILIO_PHONE_NUMBER=your_twilio_phone_number
+# Sendchamp Configuration
+SENDCHAMP_PUBLIC_KEY=your_sendchamp_public_key
+SENDCHAMP_ACCESS_TOKEN=your_sendchamp_access_token
+SENDCHAMP_SENDER_ID=your_sendchamp_sender_id
 
 # Master Wallet Configuration
 MASTER_WALLET_PRIVATE_KEY=your_master_wallet_private_key
@@ -114,8 +114,8 @@ npx tsc
 npm run dev
 ```
 
-5. Set up Twilio webhook
-Configure your Twilio phone number to send webhook POST requests to:
+5. Set up Sendchamp webhook
+Configure your Sendchamp account to send webhook POST requests to:
 ```
 https://your-server.com/sms/webhook
 ```
@@ -133,7 +133,7 @@ https://your-server.com/sms/webhook
 - **Backend**: Node.js, Express
 - **Database**: MongoDB
 - **Blockchain**: Base network, ERC-20 USDC
-- **SMS Gateway**: Twilio
+- **SMS Gateway**: Sendchamp
 - **Security**: AES encryption for wallet keys
 
 #build# 🔒 Security Notes
