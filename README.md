@@ -1,13 +1,13 @@
 # patos: Pay Tokens Over SMS
 
-📌 **Project Name:** patos
+ **Project Name:** patos
 
-📌 **Short Description:** Send and receive USDC tokens on Base network via basic SMS on feature phones with no internet access. Enables blockchain payments through text messages for 5B+ users globally.
+ **Short Description:** Send and receive USDC tokens on Base network via basic SMS on feature phones with no internet access. Enables blockchain payments through text messages for 5B+ users globally.
 
-📌 **How It's Made:** 
+ **How It's Made:** 
 Hybrid architecture combining Node.js/Express backend with React frontend. Backend manages custodial wallets using ethers.js for Base network integration, MongoDB for data persistence, and Sendchamp SMS gateway for communication. Frontend built with React 19 + TypeScript, styled with Tailwind CSS and Framer Motion. AES encryption secures wallet keys, JWT handles admin auth, and Vercel manages deployment.
 
-📌 **Public Code & Design Links:**
+ **Public Code & Design Links:**
 - GitHub: [Add your repository URL here]
 - Demo: [Demo video/presentation link - see instructions below]
 - Architecture: Custodial wallet system managing Base USDC transfers via SMS commands
@@ -167,16 +167,16 @@ https://your-server.com/sms/webhook
 - PIN-based transaction authorization
 - Comprehensive logging and error handling
 
-📌 **Demo Video / Presentation:**
+ **Demo Video / Presentation:**
 [Create a 4-minute demo video showing SMS commands in action or prepare max 10 slides covering problem, solution, tech stack, and team contributions]
 
-📌 **Deployment & Contract Details:**
+ **Deployment & Contract Details:**
 - Frontend: [Add Vercel deployment URL here]
 - Backend API: [Add backend deployment URL here]  
 - USDC Contract: 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 (Base Mainnet)
 - Test Network: Base Sepolia available for testing
 
-📌 **Problem, Impact & Future Roadmap:**
+ **Problem, Impact & Future Roadmap:**
 **Problem:** 5+ billion feature phone users globally lack access to digital payments and DeFi due to smartphone/internet requirements.
 
 **Impact:** Enables SMS-based crypto payments for unbanked populations, reducing transaction costs and increasing financial inclusion in developing markets.
