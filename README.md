@@ -8,8 +8,8 @@ Send and receive USDC tokens on Base network via basic SMS on feature phones wit
 Hybrid architecture combining Node.js/Express backend with React frontend. Backend manages custodial wallets using ethers.js for Base network integration, MongoDB for data persistence, and Sendchamp SMS gateway for communication. Frontend built with React 19 + TypeScript, styled with Tailwind CSS and Framer Motion. AES encryption secures wallet keys, JWT handles admin auth, and Vercel manages deployment.
 
  **Public Code & Design Links:**
-- GitHub: [Add your repository URL here]
-- Demo: [Demo video/presentation link - see instructions below]
+- GitHub: [Code](https://github.com/francis-codex/Paytos)]
+- Demo: [Demo](https://www.loom.com/share/8d03f9ad51f149c0853e561be681ef75?sid=f1a72faa-4198-4857-87ec-db484b7f6f72)]
 - Architecture: Custodial wallet system managing Base USDC transfers via SMS commands
 
 ## 🔧 Core Architecture
@@ -168,11 +168,9 @@ https://your-server.com/sms/webhook
 - Comprehensive logging and error handling
 
  **Demo Video / Presentation:**
-[Create a 4-minute demo video showing SMS commands in action or prepare max 10 slides covering problem, solution, tech stack, and team contributions]
-
+[Demo](https://www.loom.com/share/8d03f9ad51f149c0853e561be681ef75?sid=f1a72faa-4198-4857-87ec-db484b7f6f72)
  **Deployment & Contract Details:**
-- Frontend: [Add Vercel deployment URL here]
-- Backend API: [Add backend deployment URL here]  
+- Frontend: [Waitlist](https://paytos-base.vercel.app/)  
 - USDC Contract: 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 (Base Mainnet)
 - Test Network: Base Sepolia available for testing
 
