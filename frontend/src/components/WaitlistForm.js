@@ -106,7 +106,7 @@ const WaitlistForm = ({ onSuccess }) => {
             <div className="flex-1">
               <div className="relative">
                 <lucide_react_1.Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400"/>
-                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email" className="w-full pl-11 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-paie-cream focus:ring-2 focus:ring-paie-cream/20 transition-all placeholder-gray-400 text-white" disabled={isLoading}/>
+                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email" className="w-full pl-11 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-patos-cream focus:ring-2 focus:ring-patos-cream/20 transition-all placeholder-gray-400 text-white" disabled={isLoading}/>
               </div>
               {errors.email && (<framer_motion_1.motion.p initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="text-red-400 text-sm mt-2">
                   {errors.email}
@@ -117,7 +117,7 @@ const WaitlistForm = ({ onSuccess }) => {
             <div className="flex-1 lg:block hidden">
               <div className="relative">
                 <lucide_react_1.Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400"/>
-                <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Phone number (optional)" className="w-full pl-11 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-paie-cream focus:ring-2 focus:ring-paie-cream/20 transition-all placeholder-gray-400 text-white" disabled={isLoading}/>
+                <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Phone number (optional)" className="w-full pl-11 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-patos-cream focus:ring-2 focus:ring-patos-cream/20 transition-all placeholder-gray-400 text-white" disabled={isLoading}/>
               </div>
               {errors.phone && (<framer_motion_1.motion.p initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="text-red-400 text-sm mt-2">
                   {errors.phone}
@@ -126,7 +126,7 @@ const WaitlistForm = ({ onSuccess }) => {
 
             {/* Submit Button - Aligned with inputs on large screens */}
             <div className="lg:w-auto w-full">
-              <framer_motion_1.motion.button type="submit" disabled={isLoading} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full lg:w-auto bg-gradient-to-r from-paie-cream to-yellow-300 text-slate-900 font-semibold py-3 px-6 lg:px-8 rounded-lg hover:from-paie-cream/90 hover:to-yellow-300/90 transition-all duration-200 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap">
+              <framer_motion_1.motion.button type="submit" disabled={isLoading} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full lg:w-auto bg-gradient-to-r from-patos-cream to-yellow-300 text-slate-900 font-semibold py-3 px-6 lg:px-8 rounded-lg hover:from-patos-cream/90 hover:to-yellow-300/90 transition-all duration-200 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap">
                 {isLoading ? (<div className="w-5 h-5 border-2 border-slate-900/20 border-t-slate-900 rounded-full animate-spin"/>) : (<>
                     <span>Get Early Access</span>
                     <lucide_react_1.ArrowRight className="w-4 h-4"/>
@@ -140,7 +140,7 @@ const WaitlistForm = ({ onSuccess }) => {
             <framer_motion_1.motion.div initial={false} animate={{ height: showPhone ? 'auto' : 0, opacity: showPhone ? 1 : 0 }} transition={{ duration: 0.3 }} style={{ overflow: 'hidden' }}>
               <div className="relative">
                 <lucide_react_1.Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400"/>
-                <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Phone number (optional)" className="w-full pl-11 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-paie-cream focus:ring-2 focus:ring-paie-cream/20 transition-all placeholder-gray-400 text-white" disabled={isLoading}/>
+                <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Phone number (optional)" className="w-full pl-11 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-patos-cream focus:ring-2 focus:ring-patos-cream/20 transition-all placeholder-gray-400 text-white" disabled={isLoading}/>
               </div>
               {errors.phone && (<framer_motion_1.motion.p initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="text-red-400 text-sm mt-2">
                   {errors.phone}
@@ -148,7 +148,7 @@ const WaitlistForm = ({ onSuccess }) => {
             </framer_motion_1.motion.div>
 
             {/* Add Phone Button (Mobile only) */}
-            {!showPhone && (<button type="button" onClick={() => setShowPhone(true)} className="w-full py-2 text-paie-cream hover:text-white transition-colors text-sm">
+            {!showPhone && (<button type="button" onClick={() => setShowPhone(true)} className="w-full py-2 text-patos-cream hover:text-white transition-colors text-sm">
                 + Add phone number (optional)
               </button>)}
           </div>

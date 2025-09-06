@@ -1,6 +1,6 @@
-# paie Landing Page
+# patos Landing Page
 
-A modern, animated React landing page for paie with waitlist functionality powered by Supabase.
+A modern, animated React landing page for patos with waitlist functionality powered by Supabase.
 
 ## 🚀 Features
 
@@ -8,7 +8,7 @@ A modern, animated React landing page for paie with waitlist functionality power
 - **Unique UI/UX**: Custom cursor follower, floating elements, and smooth animations
 - **Waitlist Integration**: Connected to Supabase database for email collection
 - **Responsive Design**: Works perfectly on all devices
-- **Brand Colors**: Incorporates paie brand colors (#f7f5f2 and #1571e2)
+- **Brand Colors**: Incorporates patos brand colors (#f7f5f2 and #1571e2)
 - **Interactive Elements**: Hover effects, micro-animations, and transitions
 
 ## 🛠️ Setup Instructions
@@ -87,8 +87,8 @@ The app will open at [http://localhost:3000](http://localhost:3000).
 
 ### Brand Integration
 
-- **Primary Color**: `#1571e2` (paie Blue)
-- **Secondary Color**: `#f7f5f2` (paie Cream)
+- **Primary Color**: `#1571e2` (patos Blue)
+- **Secondary Color**: `#f7f5f2` (patos Cream)
 - **Typography**: Inter font family for modern look
 - **Logo**: MessageSquare icon with gradient background
 
@@ -96,7 +96,7 @@ The app will open at [http://localhost:3000](http://localhost:3000).
 
 - **WaitlistForm**: Interactive form with validation and Supabase integration
 - **FloatingElements**: Animated background elements
-- **FeatureCards**: Showcase key paie features
+- **FeatureCards**: Showcase key patos features
 - **App**: Main landing page with hero section and navigation
 
 ## 🚀 Deployment
@@ -127,8 +127,8 @@ Update colors in `tailwind.config.js`:
 
 ```javascript
 colors: {
-  'paie-cream': '#f7f5f2',
-  'paie-blue': '#1571e2',
+  'patos-cream': '#f7f5f2',
+  'patos-blue': '#1571e2',
 }
 ```
 

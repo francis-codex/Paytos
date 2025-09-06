@@ -50,7 +50,7 @@ function App() {
       {/* Success notification */}
       <framer_motion_1.AnimatePresence>
         {showSuccess && (<framer_motion_1.motion.div initial={{ opacity: 0, y: -100 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -100 }} className="fixed top-4 right-4 z-50 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg">
-            🎉 Welcome to the paie waitlist!
+            🎉 Welcome to the patos waitlist!
           </framer_motion_1.motion.div>)}
       </framer_motion_1.AnimatePresence>
 
@@ -59,20 +59,20 @@ function App() {
         <nav className="max-w-7xl mx-auto flex justify-between items-center">
           <framer_motion_1.motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="flex items-center space-x-3">
             <div className="w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center">
-              <img src="/logo.png" alt="paie Logo" className="w-full h-full object-cover rounded-xl" style={{ filter: 'drop-shadow(none)' }}/>
+              <img src="/logo.png" alt="patos Logo" className="w-full h-full object-cover rounded-xl" style={{ filter: 'drop-shadow(none)' }}/>
             </div>
-            <span className="text-2xl font-bold text-paie-cream">paie</span>
+            <span className="text-2xl font-bold text-patos-cream">patos</span>
           </framer_motion_1.motion.div>
 
           <framer_motion_1.motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="flex items-center space-x-6">
-            <a href="#waitlist" className="text-gray-300 hover:text-paie-cream transition-colors">
+            <a href="#waitlist" className="text-gray-300 hover:text-patos-cream transition-colors">
               Join Waitlist
             </a>
             <div className="flex items-center space-x-3">
-              <a href="https://github.com/Arihaan/paie" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-paie-cream transition-colors">
+              <a href="https://github.com/Arihaan/patos" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-patos-cream transition-colors">
                 <lucide_react_1.Github className="w-5 h-5"/>
               </a>
-              <a href="https://x.com/intent/user?screen_name=0xpaie" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-paie-cream transition-colors text-lg font-bold">
+              <a href="https://x.com/intent/user?screen_name=0xpatos" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-patos-cream transition-colors text-lg font-bold">
                 𝕏
               </a>
             </div>
@@ -91,13 +91,13 @@ function App() {
             </framer_motion_1.motion.div>
 
             {/* Main Headline - Single Line */}
-            <framer_motion_1.motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1 }} className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-paie-cream">
+            <framer_motion_1.motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1 }} className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-patos-cream">
               Pay Tokens over SMS
             </framer_motion_1.motion.h1>
 
             {/* Subtitle */}
             <framer_motion_1.motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="text-lg sm:text-xl lg:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              Send and receive <span className="text-paie-blue font-semibold">Solana tokens</span> via 
+              Send and receive <span className="text-patos-blue font-semibold">Solana tokens</span> via 
               simple text messages. No smartphone or internet required.
             </framer_motion_1.motion.p>
 
@@ -108,7 +108,7 @@ function App() {
             { icon: lucide_react_1.MessageSquare, label: 'SMS Compatible', value: '100%' },
             { icon: lucide_react_1.DollarSign, label: 'Transaction Fee', value: '<$0.01' },
         ].map((stat, index) => (<div key={stat.label} className="flex items-center space-x-3 glass-effect rounded-lg px-3 sm:px-4 py-2 sm:py-3">
-                  <stat.icon className="w-5 h-5 sm:w-6 sm:h-6 text-paie-cream"/>
+                  <stat.icon className="w-5 h-5 sm:w-6 sm:h-6 text-patos-cream"/>
                   <div>
                     <div className="text-lg sm:text-xl lg:text-2xl font-bold text-white">{stat.value}</div>
                     <div className="text-xs sm:text-sm text-gray-400">{stat.label}</div>
@@ -138,8 +138,8 @@ function App() {
                   <div className="bg-slate-800 rounded-lg p-3 sm:p-4 mb-2 border border-slate-700">
                     <div className="text-green-400 text-xs sm:text-sm font-mono">→ {demo.action}</div>
                   </div>
-                  <div className="bg-paie-cream/20 rounded-lg p-3 sm:p-4 border border-paie-cream/30">
-                    <div className="text-paie-cream text-xs sm:text-sm font-mono">← {demo.response}</div>
+                  <div className="bg-patos-cream/20 rounded-lg p-3 sm:p-4 border border-patos-cream/30">
+                    <div className="text-patos-cream text-xs sm:text-sm font-mono">← {demo.response}</div>
                   </div>
                 </framer_motion_1.motion.div>))}
             </div>
@@ -152,9 +152,9 @@ function App() {
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
             <div className="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center">
-              <img src="/logo.png" alt="paie Logo" className="w-full h-full object-cover rounded-lg" style={{ filter: 'drop-shadow(none)' }}/>
+              <img src="/logo.png" alt="patos Logo" className="w-full h-full object-cover rounded-lg" style={{ filter: 'drop-shadow(none)' }}/>
             </div>
-            <span className="text-xl font-bold text-paie-cream">paie</span>
+            <span className="text-xl font-bold text-patos-cream">patos</span>
           </div>
           <p className="text-gray-400 text-sm">
             Making cryptocurrency accessible to everyone, everywhere.

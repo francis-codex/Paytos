@@ -1,10 +1,10 @@
-# paie: Pay Tokens Over SMS
+# patos: Pay Tokens Over SMS
 
-paie allows users to send and receive USDC tokens on the Base network via basic SMS on feature phones with no internet access.
+patos allows users to send and receive USDC tokens on the Base network via basic SMS on feature phones with no internet access.
 
 ## 🔧 Core Idea
 
-paie bridges the gap between blockchain and traditional feature phones by enabling:
+patos bridges the gap between blockchain and traditional feature phones by enabling:
 
 - A backend wallet system that users interact with via SMS commands
 - A trusted SMS gateway (Sendchamp) to send/receive messages
@@ -21,7 +21,7 @@ Response: "Wallet created. Balance: $0 USD. Your PIN is used to confirm transact
 ### Checking Balance
 ```
 User sends: BALANCE <PIN>
-Response: "paie Balance (Base): USDC: 0.00, ETH: 0.0000"
+Response: "patos Balance (Base): USDC: 0.00, ETH: 0.0000"
 ```
 
 ### Sending Money
@@ -51,8 +51,8 @@ The recipient gets a notification when money is sent to their phone number:
 
 1. Clone the repository
 ```
-git clone https://github.com/username/paie.git
-cd paie
+git clone https://github.com/username/patos.git
+cd patos
 ```
 
 2. Install dependencies
@@ -67,7 +67,7 @@ PORT=3000
 NODE_ENV=development
 
 # MongoDB Configuration
-MONGODB_URI=mongodb://localhost:27017/paie
+MONGODB_URI=mongodb://localhost:27017/patos
 
 # Sendchamp Configuration
 SENDCHAMP_PUBLIC_KEY=your_sendchamp_public_key

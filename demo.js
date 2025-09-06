@@ -7,7 +7,7 @@ const smsService = require('./src/services/smsService');
 const walletUtils = require('./src/utils/wallet');
 const logger = require('./src/utils/logger');
 
-console.log('🚀 paie SMS Payments Demo\n');
+console.log('🚀 patos SMS Payments Demo\n');
 console.log('=========================================\n');
 
 // Demo configuration
@@ -165,7 +165,7 @@ async function runDemo() {
     console.log('✅ Base network connection: Working');
     console.log('✅ Sendchamp SMS integration: Ready');
     console.log('');
-    console.log('🚀 Your paie system is ready for live testing!');
+    console.log('🚀 Your patos system is ready for live testing!');
     console.log('');
     console.log('📱 Next Steps for Live Demo:');
     console.log('1. Fund your master wallet with ETH for gas fees');

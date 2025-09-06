@@ -58,7 +58,7 @@ const sendSms = async (to, message) => {
  */
 const sendRegistrationConfirmation = async (phoneNumber) => {
   const message = 
-`Welcome to paie! Your wallet has been created.
+`Welcome to patos! Your wallet has been created.
 - To check your balance, text: BALANCE <PIN>
 - To send money, text: SEND <RECIPIENT> <AMOUNT> <TOKEN> <PIN>
 - For help, text: HELP`;
@@ -73,7 +73,7 @@ const sendRegistrationConfirmation = async (phoneNumber) => {
  */
 const sendBalanceInfo = async (phoneNumber, balances) => {
   const message =
-`paie Balance (Base):
+`patos Balance (Base):
 USDC: ${balances.USDC.toFixed(2)}
 ETH: ${balances.ETH.toFixed(4)}`;
 
@@ -143,14 +143,14 @@ const sendErrorMessage = async (phoneNumber, errorMessage) => {
  */
 const sendHelpMessage = async (phoneNumber) => {
   const message =
-`paie Commands:
+`patos Commands:
 - REGISTER <PIN> - Create a new wallet
 - BALANCE <PIN> - Check your balance
 - SEND <RECIPIENT> <AMOUNT> USDC <PIN> - Send USDC
   Example: SEND +1234567890 10 USDC 1234
 - Network: Base
 
-Need more help? Visit paie.io`;
+Need more help? Visit patos.io`;
 
   return sendSms(phoneNumber, message);
 };

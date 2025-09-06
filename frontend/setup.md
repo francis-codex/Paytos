@@ -1,4 +1,4 @@
-# Quick Setup Guide for paie Landing Page
+# Quick Setup Guide for patos Landing Page
 
 ## 🚀 Quick Start (5 minutes)
 
@@ -57,7 +57,7 @@ The landing page will open at http://localhost:3000
 - **Interactive Elements**: Custom cursor follower, floating particles
 - **Waitlist Form**: Email collection with optional phone number
 - **Responsive Design**: Works on all devices
-- **Brand Integration**: Uses paie colors (#1571e2, #f7f5f2)
+- **Brand Integration**: Uses patos colors (#1571e2, #f7f5f2)
 
 ## 🎨 Unique Features
 
@@ -65,7 +65,7 @@ The landing page will open at http://localhost:3000
 2. **Progressive Form**: Phone field reveals on demand
 3. **Micro-interactions**: Hover effects and smooth transitions
 4. **Success Feedback**: Animated notifications
-5. **SMS Demo**: Shows how paie SMS commands work
+5. **SMS Demo**: Shows how patos SMS commands work
 
 ## 🔧 Customization
 

@@ -60,7 +60,7 @@ export const FloatingElements: React.FC = () => {
       ].map((position, i) => (
         <motion.div
           key={i}
-          className="absolute w-2 h-2 bg-paie-cream rounded-full opacity-30"
+          className="absolute w-2 h-2 bg-patos-cream rounded-full opacity-30"
           style={{
             left: position.x,
             top: position.y,

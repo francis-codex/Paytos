@@ -6,7 +6,7 @@ module.exports = {
     env: process.env.NODE_ENV || 'development',
   },
   mongo: {
-    uri: process.env.MONGODB_URI || 'mongodb://paieuser:paie123@127.0.0.1:27017/paie',
+    uri: process.env.MONGODB_URI || 'mongodb://patosuser:patos123@127.0.0.1:27017/patos',
   },
   sendchamp: {
     publicKey: process.env.SENDCHAMP_PUBLIC_KEY,

@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'paie-cream': '#f7f5f2',
-        'paie-blue': '#1571e2',
+        'patos-cream': '#f7f5f2',
+        'patos-blue': '#1571e2',
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

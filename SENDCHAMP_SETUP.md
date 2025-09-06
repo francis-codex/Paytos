@@ -1,6 +1,6 @@
-# Sendchamp Setup Guide for paie
+# Sendchamp Setup Guide for patos
 
-This guide will walk you through setting up Sendchamp for your paie SMS payments system.
+This guide will walk you through setting up Sendchamp for your patos SMS payments system.
 
 ## 🚀 Quick Start
 
@@ -27,7 +27,7 @@ This guide will walk you through setting up Sendchamp for your paie SMS payments
 1. **Login to Dashboard**: Go to [dashboard.sendchamp.com](https://dashboard.sendchamp.com)
 2. **Navigate to Settings**: Click on "Settings" → "API Keys"
 3. **Copy Your Credentials**:
-   - **Public Key**: Used for client-side operations (not needed for paie)
+   - **Public Key**: Used for client-side operations (not needed for patos)
    - **Access Token**: Your secret API key for server-side operations
    - **Test Access Token**: For testing purposes
 
@@ -35,7 +35,7 @@ This guide will walk you through setting up Sendchamp for your paie SMS payments
 
 1. **Go to SMS Settings**: Dashboard → SMS → Sender IDs
 2. **Add Sender ID**:
-   - **Alphanumeric**: Up to 11 characters (e.g., "PAIE", "PayTokens")
+   - **Alphanumeric**: Up to 11 characters (e.g., "patos", "PayTokens")
    - **Numeric**: Your registered phone number
 3. **Submit for Approval**: Some countries require sender ID approval
 4. **Approval Time**: Usually 24-48 hours for alphanumeric IDs
@@ -48,7 +48,7 @@ Create or update your `.env` file with the following:
 # Sendchamp Configuration
 SENDCHAMP_PUBLIC_KEY=pk_test_xxxxxxxxxxxx
 SENDCHAMP_ACCESS_TOKEN=sk_test_xxxxxxxxxxxx
-SENDCHAMP_SENDER_ID=PAIE
+SENDCHAMP_SENDER_ID=patos
 
 # For Production, use live keys:
 # SENDCHAMP_PUBLIC_KEY=pk_live_xxxxxxxxxxxx
@@ -86,12 +86,12 @@ const verifyWebhookSignature = (payload, signature, secret) => {
 
 1. **Transactional SMS**: For system messages (receipts, confirmations)
 2. **OTP SMS**: For verification codes
-3. **Bulk SMS**: For marketing (not needed for paie)
+3. **Bulk SMS**: For marketing (not needed for patos)
 
 ### Route Types
 
 - **DND**: For marketing messages (more expensive)
-- **Non-DND**: For transactional messages (cheaper, recommended for paie)
+- **Non-DND**: For transactional messages (cheaper, recommended for patos)
 
 ## 🌍 Country-Specific Setup
 
@@ -152,8 +152,8 @@ curl -X POST "https://api.sendchamp.com/api/v1/sms/send" \
   -H "Content-Type: application/json" \
   -d '{
     "to": ["+2348123456789"],
-    "message": "Test message from paie!",
-    "sender_name": "PAIE",
+    "message": "Test message from patos!",
+    "sender_name": "patos",
     "route": "non_dnd"
   }'
 ```
@@ -243,4 +243,4 @@ res.send('<Response></Response>');
 res.status(200).json({ status: 'success', message: 'SMS processed' });
 ```
 
-Your paie codebase has been fully updated to work with Sendchamp! 🎉
+Your patos codebase has been fully updated to work with Sendchamp! 🎉

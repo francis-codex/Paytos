@@ -49,7 +49,7 @@ const FloatingElements = () => {
             { x: '70%', y: '80%' },
             { x: '50%', y: '40%' },
             { x: '30%', y: '50%' },
-        ].map((position, i) => (<framer_motion_1.motion.div key={i} className="absolute w-2 h-2 bg-paie-cream rounded-full opacity-30" style={{
+        ].map((position, i) => (<framer_motion_1.motion.div key={i} className="absolute w-2 h-2 bg-patos-cream rounded-full opacity-30" style={{
                 left: position.x,
                 top: position.y,
             }} animate={{

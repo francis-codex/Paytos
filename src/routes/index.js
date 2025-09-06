@@ -12,7 +12,7 @@ router.use('/sms', smsRoutes);
 // Root route
 router.get('/', (req, res) => {
   res.json({
-    name: 'paie API',
+    name: 'patos API',
     description: 'Send and receive Solana tokens via SMS',
     version: '1.0.0',
   });

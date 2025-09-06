@@ -85,7 +85,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({ onSuccess }) => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
-                  className="w-full pl-11 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-paie-cream focus:ring-2 focus:ring-paie-cream/20 transition-all placeholder-gray-400 text-white"
+                  className="w-full pl-11 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-patos-cream focus:ring-2 focus:ring-patos-cream/20 transition-all placeholder-gray-400 text-white"
                   disabled={isLoading}
                 />
               </div>
@@ -109,7 +109,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({ onSuccess }) => {
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="Phone number (optional)"
-                  className="w-full pl-11 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-paie-cream focus:ring-2 focus:ring-paie-cream/20 transition-all placeholder-gray-400 text-white"
+                  className="w-full pl-11 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-patos-cream focus:ring-2 focus:ring-patos-cream/20 transition-all placeholder-gray-400 text-white"
                   disabled={isLoading}
                 />
               </div>
@@ -131,7 +131,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({ onSuccess }) => {
                 disabled={isLoading}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full lg:w-auto bg-gradient-to-r from-paie-cream to-yellow-300 text-slate-900 font-semibold py-3 px-6 lg:px-8 rounded-lg hover:from-paie-cream/90 hover:to-yellow-300/90 transition-all duration-200 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+                className="w-full lg:w-auto bg-gradient-to-r from-patos-cream to-yellow-300 text-slate-900 font-semibold py-3 px-6 lg:px-8 rounded-lg hover:from-patos-cream/90 hover:to-yellow-300/90 transition-all duration-200 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
               >
                 {isLoading ? (
                   <div className="w-5 h-5 border-2 border-slate-900/20 border-t-slate-900 rounded-full animate-spin" />
@@ -160,7 +160,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({ onSuccess }) => {
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="Phone number (optional)"
-                  className="w-full pl-11 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-paie-cream focus:ring-2 focus:ring-paie-cream/20 transition-all placeholder-gray-400 text-white"
+                  className="w-full pl-11 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-patos-cream focus:ring-2 focus:ring-patos-cream/20 transition-all placeholder-gray-400 text-white"
                   disabled={isLoading}
                 />
               </div>
@@ -180,7 +180,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({ onSuccess }) => {
               <button
                 type="button"
                 onClick={() => setShowPhone(true)}
-                className="w-full py-2 text-paie-cream hover:text-white transition-colors text-sm"
+                className="w-full py-2 text-patos-cream hover:text-white transition-colors text-sm"
               >
                 + Add phone number (optional)
               </button>
