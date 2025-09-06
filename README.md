@@ -1,10 +1,10 @@
 # Patos: Pay Tokens Over SMS
 
- **Project Name:** patos
+ ## Patos
 
- **Short Description:** Send and receive USDC tokens on Base network via basic SMS on feature phones with no internet access. Enables blockchain payments through text messages for 5B+ users globally.
+Send and receive USDC tokens on Base network via basic SMS on feature phones with no internet access. Enables blockchain payments through text messages for 5B+ users globally.
 
- **How It's Made:** 
+
 Hybrid architecture combining Node.js/Express backend with React frontend. Backend manages custodial wallets using ethers.js for Base network integration, MongoDB for data persistence, and Sendchamp SMS gateway for communication. Frontend built with React 19 + TypeScript, styled with Tailwind CSS and Framer Motion. AES encryption secures wallet keys, JWT handles admin auth, and Vercel manages deployment.
 
  **Public Code & Design Links:**
