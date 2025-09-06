@@ -1,6 +1,6 @@
-const config = require('./config/config');
-const walletUtils = require('./src/utils/wallet');
-const smsParser = require('./src/utils/smsParser');
+const config = require('./server/config/config');
+const walletUtils = require('./server/utils/wallet');
+const smsParser = require('./server/utils/smsParser');
 
 console.log('🔧 Testing Base Network Integration...\n');
 

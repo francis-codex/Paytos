@@ -1,5 +1,5 @@
 // Removed Solana imports as we're now Base-only
-const config = require('../../config/config');
+const config = require('../config/config');
 const walletUtils = require('../utils/wallet');
 const logger = require('../utils/logger');
 const User = require('../models/User');

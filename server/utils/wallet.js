@@ -14,7 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.decryptWallet = exports.createEncryptedWallet = exports.getMasterWallet = exports.estimateUSDCTransferGas = exports.sendUSDC = exports.checkNativeBalance = exports.checkUSDCBalance = exports.getUSDCContract = exports.getNetworkConfig = exports.getProvider = exports.getWalletForBase = exports.restoreWallet = exports.createWallet = void 0;
 const ethers_1 = require("ethers");
-const config_1 = __importDefault(require("../../config/config"));
+const config_1 = __importDefault(require("../config/config"));
 const encryption_1 = __importDefault(require("./encryption"));
 const logger_1 = __importDefault(require("./logger"));
 // ERC-20 USDC ABI (minimal interface for balance and transfer)

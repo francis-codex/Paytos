@@ -1,5 +1,5 @@
 import { ethers } from 'ethers';
-import config from '../../config/config';
+import config from '../config/config';
 import encryption from './encryption';
 import logger from './logger';
 

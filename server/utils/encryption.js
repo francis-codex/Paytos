@@ -1,5 +1,5 @@
 const CryptoJS = require('crypto-js');
-const config = require('../../config/config');
+const config = require('../config/config');
 
 /**
  * Encrypts a text using AES encryption

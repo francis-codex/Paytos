@@ -1,14 +1,24 @@
 # patos: Pay Tokens Over SMS
 
-patos allows users to send and receive USDC tokens on the Base network via basic SMS on feature phones with no internet access.
+📌 **Project Name:** patos
 
-## 🔧 Core Idea
+📌 **Short Description:** Send and receive USDC tokens on Base network via basic SMS on feature phones with no internet access. Enables blockchain payments through text messages for 5B+ users globally.
 
-patos bridges the gap between blockchain and traditional feature phones by enabling:
+📌 **How It's Made:** 
+Hybrid architecture combining Node.js/Express backend with React frontend. Backend manages custodial wallets using ethers.js for Base network integration, MongoDB for data persistence, and Sendchamp SMS gateway for communication. Frontend built with React 19 + TypeScript, styled with Tailwind CSS and Framer Motion. AES encryption secures wallet keys, JWT handles admin auth, and Vercel manages deployment.
 
-- A backend wallet system that users interact with via SMS commands
-- A trusted SMS gateway (Sendchamp) to send/receive messages
-- Custodial wallets managed by our backend on Base network
+📌 **Public Code & Design Links:**
+- GitHub: [Add your repository URL here]
+- Demo: [Demo video/presentation link - see instructions below]
+- Architecture: Custodial wallet system managing Base USDC transfers via SMS commands
+
+## 🔧 Core Architecture
+
+patos bridges blockchain and feature phones through:
+
+- Backend wallet system with SMS command processing
+- Sendchamp SMS gateway for global text message delivery
+- Custodial wallets on Base network with USDC support
 
 ## 📱 How It Works
 
@@ -128,15 +138,52 @@ https://your-server.com/sms/webhook
   - Example: `SEND +1234567890 10 USDC 1234`
 - `HELP` - Get list of available commands
 
-## 🛠️ Tech Stack
+## 🛠️ Technical Breakdown
 
-- **Backend**: Node.js, Express
-- **Database**: MongoDB
-- **Blockchain**: Base network, ERC-20 USDC
-- **SMS Gateway**: Sendchamp
-- **Security**: AES encryption for wallet keys
+**Backend Stack:**
+- Node.js + Express.js server framework
+- MongoDB Atlas for user/transaction persistence
+- Ethers.js for Base network blockchain integration
+- Sendchamp SMS gateway API for global messaging
+- AES-256 encryption for secure wallet key storage
+- JWT authentication for admin dashboard access
 
-#build# 🔒 Security Notes
+**Frontend Stack:**
+- React 19.1.0 with TypeScript for type safety
+- Tailwind CSS + custom animations for modern UI
+- Framer Motion for smooth page transitions
+- Lucide React icons for consistent iconography
+- Vercel deployment with automated CI/CD
+
+**Blockchain Infrastructure:**
+- Base Layer 2 network for low-cost transactions
+- USDC ERC-20 token contract integration
+- Custodial wallet management with gas optimization
+- Transaction confirmation via SMS workflow
+
+**Security & DevOps:**
+- Rate limiting and request validation
+- Encrypted private key storage at rest
+- PIN-based transaction authorization
+- Comprehensive logging and error handling
+
+📌 **Demo Video / Presentation:**
+[Create a 4-minute demo video showing SMS commands in action or prepare max 10 slides covering problem, solution, tech stack, and team contributions]
+
+📌 **Deployment & Contract Details:**
+- Frontend: [Add Vercel deployment URL here]
+- Backend API: [Add backend deployment URL here]  
+- USDC Contract: 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 (Base Mainnet)
+- Test Network: Base Sepolia available for testing
+
+📌 **Problem, Impact & Future Roadmap:**
+**Problem:** 5+ billion feature phone users globally lack access to digital payments and DeFi due to smartphone/internet requirements.
+
+**Impact:** Enables SMS-based crypto payments for unbanked populations, reducing transaction costs and increasing financial inclusion in developing markets.
+
+**Future:** Multi-token support, merchant integrations, offline transaction queuing, and integration with existing mobile money systems.
+
+## 🔒 Security Notes
 
 - User wallet private keys are encrypted at rest
 - PINs are hashed before storage
