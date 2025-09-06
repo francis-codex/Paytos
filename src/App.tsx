@@ -60,7 +60,7 @@ function App() {
             </a>
             <div className="flex items-center space-x-3">
               <a 
-                href="https://github.com/Arihaan/patos" 
+                href="https://github.com/francis-codex/Paytos" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-patos-cream transition-colors"
@@ -68,7 +68,7 @@ function App() {
                 <Github className="w-5 h-5" />
               </a>
               <a 
-                href="https://x.com/intent/user?screen_name=0xpatos" 
+                href="https://x.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-patos-cream transition-colors text-lg font-bold"
