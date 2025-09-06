@@ -1,4 +1,4 @@
-# patos: Pay Tokens Over SMS
+# Patos: Pay Tokens Over SMS
 
  **Project Name:** patos
 
